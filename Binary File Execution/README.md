@@ -1,6 +1,6 @@
 README for my_cmd.c
 
-===================================
+
 Custom Command Execution Program
 ===================================
 
