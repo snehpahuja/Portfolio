@@ -1,4 +1,4 @@
-neh Pahuja and Ananya Pandit
+Sneh Pahuja and Ananya Pandit
 
 # Command-Line Based C Program to Copy Files 
 
