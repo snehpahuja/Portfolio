@@ -1,31 +1,15 @@
-Sneh Pahuja and Ananya Pandit
+neh Pahuja and Ananya Pandit
 
-# Single File Operations
+# Command-Line Based C Program to Copy Files 
+
 
 # Project Description
 
 C Program:
-The c program uses switch case to parse through the command line. This switch case in place of the if else is more for the readability of the code. For errno error codes, rather than rewriting the process each time, we've written the block at the end, and the program just goes to the block directly. When renaming the file, the filename is updated, so that if more than one operation is mentioned on the command line, the new filename is the most current version. Before any operation commands the filename has to be specified. This is standards for all operations to simplify the process. For deleting files and empty directories, there is a system call called remove that utilises two others to handle cases for both files(unlink) and empty directories(rmdir). Before appending to files, there is a checker to see whether the file is binary or text (through looking for a null character while reading the file). Instead of mallocing space for the buffer to read, we have kept a standard file size of 1024 bytes. For appending to files, there are two cases. When appending text, the process is quite straightforward(appending the buffer to the file). For appending the odd numbers, first there is a check to make sure it is within the specified range(50-200). Then the sequential odd numbers are calculated till 200. The number of odd numbers is also stored. Once the array of values is created and filled, the array is appended to the file.Even though there is a check for binary file, we have kept two separate commands for clarity purposes. Error handling is taken care of every time a system call is used.
+After declaring variables for the input and output file paths and descriptors, the program loops through the command line argument and stores the input and output file paths. If there are any errors in the command line usage(for example the user types in -h instead of -i), the program returns an exit code and the error is printed out on standard error by the BASH shell script. After the command line arguments are parsed, it checks whether the input and ouput file path are null. After handling that the program handles the standard input case by assigning the file descriptor to 0. It does the same later for the standard output case assigning the output file descriptor to 1. After the file descriptors are set in both cases the file are opened for reading and writing respectively with appropriate permissions being set. To ensure that the reading buffer is the exact size required, first the size of the the input file is found through fstat, and then memory is allocated for the buffer accordingly. There are further error handling cases for memory management issues and writing issues. The files are closed and the allocated memory is freed before returning exit codes. If there are no errors the program returns 0.
 
-# Usage
+# Usage 
+Without makefile:  ./flame_cp -i input_file.c -o output_file.c
+Without makefile(with BASH): ./errors.sh ./flame_cp -i input_file.c -o output_file.c
 
-To create a file:
-With makefile: make run ARGS="-n input_file.c -cf"
-
-To create a directory:
-With makefile: make run ARGS="-n input_file.c -cd"
-
-To rename file or directory:
-With makefile: make run ARGS="-n filename -r newname"
-
-To delete file or empty directory:
-With makefile: make run ARGS="-n filename -d"
-
-To write first 50 bytes of file to standard ouput:
-With makefile: make run ARGS="-n filename -w"
-
-To append to file 50 bytes of text:
-With makefile: make run ARGS="-n filename -at 'string of text'"
-
-To append to file 50 bytes of odd numbers:
-With makefile: make run ARGS="-n filename -ab starting_number"
+With makefile: make run ARGS="-i input_file.c -o output_file.c 
