@@ -1,17 +1,18 @@
 CC = gcc
-CCFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra
 
-TARGET = my_fm
+TARGET = flame_cp
+SCRIPT = errors.sh
 
 .PHONY: all clean
 
 all: $(TARGET)
 
-$(TARGET): my_fm.c
-	@$(CC) $(CFLAGS) -o $@ $^
+$(TARGET): my_copy.c
+	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	@rm -f $(TARGET)
+	rm -f $(TARGET)
 
 run: $(TARGET)
-	@./$(TARGET) $(ARGS)
+	./errors.sh $(TARGET) $(ARGS)
