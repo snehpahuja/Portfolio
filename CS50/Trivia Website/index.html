@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet">
+
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <div class="mcq-question">
+                    Spotify has changed the way millennials listen to music, but which millennial
+                    holds the current record for the most streamed song on the platform?
+                    <p id='feedback'></p>
+                </div>
+                <div class="mcq-answers">
+                    <button class="incorrect" id="option-1">Drake</button>
+                    <button class="correct" id="option-2">Ed Sheeran</button>
+                    <button class="incorrect" id="option-3">Justin Bieber</button>
+                    <button class="incorrect" id="option-4">Adele</button>
+                    <button class="incorrect" id="option-5">Taylor Swift</button>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3 class="free-response-question">Who invented the frisbee?</h3>
+                <div class="free-response-answer">
+                <input type="text" class="check">
+                <button class="check-button">Check Answer </button>
+                <p class='free-response-feedback'></p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script src="functionality.js">
+        </script>
+</html>
