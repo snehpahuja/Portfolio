@@ -1,0 +1,33 @@
+center,name,type,purpose,date
+Pune-01,Visitor 99,Partner,Visit,2024-09-03
+Pune-01,Visitor 33,Local Leader,Check,2024-11-05
+Pune-01,Visitor 104,Partner,Visit,2024-05-27
+Pune-01,Visitor 163,Partner,Meeting,2024-01-15
+Pune-01,Visitor 26,Donor,Visit,2024-03-15
+Pune-01,Visitor 178,Donor,Donation,2024-10-10
+Pune-01,Visitor 82,Donor,Meeting,2024-10-09
+Pune-01,Visitor 13,Inspector,Check,2024-06-15
+Pune-12,Visitor 182,Partner,Visit,2024-02-04
+Pune-12,Visitor 54,Donor,Donation,2024-09-18
+Pune-12,Visitor 91,Partner,Meeting,2024-11-24
+Pune-12,Visitor 175,Partner,Meeting,2024-10-09
+Pune-12,Visitor 36,Local Leader,Donation,2024-03-18
+Pune-12,Visitor 48,Local Leader,Check,2024-04-23
+Pune-12,Visitor 44,Partner,Check,2024-11-11
+Pune-12,Visitor 176,Inspector,Check,2024-04-15
+Mumbai-03,Visitor 20,Inspector,Visit,2024-04-29
+Mumbai-03,Visitor 142,Donor,Meeting,2024-10-13
+Mumbai-03,Visitor 9,Inspector,Visit,2024-03-14
+Mumbai-03,Visitor 181,Partner,Donation,2024-02-14
+Delhi-05,Visitor 100,Donor,Check,2024-07-22
+Delhi-05,Visitor 97,Partner,Donation,2024-08-17
+Delhi-05,Visitor 149,Donor,Visit,2024-05-17
+Delhi-05,Visitor 51,Inspector,Meeting,2024-12-02
+Delhi-05,Visitor 76,Local Leader,Visit,2024-11-13
+Delhi-05,Visitor 145,Donor,Donation,2024-04-19
+Bangalore-07,Visitor 38,Inspector,Donation,2024-08-26
+Bangalore-07,Visitor 89,Donor,Donation,2024-09-27
+Bangalore-07,Visitor 112,Inspector,Donation,2024-09-23
+Bangalore-07,Visitor 121,Inspector,Check,2024-10-29
+Bangalore-07,Visitor 193,Partner,Visit,2024-08-27
+Bangalore-07,Visitor 106,Inspector,Meeting,2024-12-16

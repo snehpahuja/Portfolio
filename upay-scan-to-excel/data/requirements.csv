@@ -1,0 +1,16 @@
+center,item,qty,priority
+Pune-01,Projector,20,Medium
+Pune-01,Snacks,36,Low
+Pune-01,Stationery,33,Low
+Pune-01,Stationery,44,Medium
+Pune-01,Stationery,26,Low
+Pune-12,Stationery,5,High
+Pune-12,Chairs,3,Low
+Mumbai-03,Stationery,36,Medium
+Delhi-05,Books,10,Medium
+Delhi-05,Books,9,High
+Bangalore-07,Snacks,24,High
+Bangalore-07,Books,34,Medium
+Bangalore-07,Stationery,24,Medium
+Bangalore-07,Projector,31,High
+Bangalore-07,Books,33,Low

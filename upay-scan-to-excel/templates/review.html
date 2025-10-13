@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPAY | Review Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Remove the default border ring on focused inputs for a cleaner look */
+        input:focus {
+            box-shadow: none !important;
+            --tw-ring-shadow: none !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center gap-4">
+                    <a href="bulk-review-list.html" class="flex items-center gap-2 text-sm text-gray-600 hover:text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                        </svg>
+                        Back to List
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" title="Previous document" class="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </a>
+                    <span class="text-sm text-gray-600">Document 1 of 4</span>
+                     <a href="#" title="Next document" class="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex justify-between items-center mb-4">
+                 <div>
+                    <h3 class="text-lg font-semibold">Original Document</h3>
+                    <p class="text-sm text-gray-500">student_records_sept.pdf</p>
+                </div>
+                <div class="space-x-2">
+                    <button class="px-3 py-1 text-sm border rounded-md hover:bg-gray-50">Zoom In (+)</button>
+                    <button class="px-3 py-1 text-sm border rounded-md hover:bg-gray-50">Zoom Out (-)</button>
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg border flex items-center justify-center h-[70vh]">
+                 <img src="https://placehold.co/600x850/e2e8f0/475569?text=Document+Preview" alt="Document Preview Placeholder" class="w-full h-full object-contain rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-2">Extracted Data</h3>
+            <p class="text-sm text-gray-500 mb-4">Review the extracted data below. Fields highlighted in red may need correction.</p>
+            
+            <div class="overflow-auto border border-gray-300 rounded-lg" style="height: 70vh;">
+                <table class="min-w-full">
+                    <thead class="bg-gray-50 sticky top-0">
+                        <tr>
+                            <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-r border-gray-300">Student ID</th>
+                            <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-r border-gray-300">Name</th>
+                            <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-r border-gray-300">Date of Birth</th>
+                            <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-r border-gray-300">Center</th>
+                            <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-r border-gray-300">Subject</th>
+                            <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-r border-gray-300">Marks</th>
+                            <th scope="col" class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-300">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1023" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Anika Sharma" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300 bg-red-50"><input type="text" value="15/O8/2010" class="w-full p-1 text-xs border-none bg-transparent focus:ring-red-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Mumbai" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Mathematics" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="85" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="bg-red-50"><input type="text" value="A" class="w-full p-1 text-xs border-none bg-transparent focus:ring-red-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1024" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Rohan Singh" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="22/03/2011" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Mumbai" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Science" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="92" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="A+" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1025" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Priya Patel" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="05/11/2010" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Delhi" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="English" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="78" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="B+" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1026" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Amit Kumar" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300 bg-red-50"><input type="text" value="30-01-2011" class="w-full p-1 text-xs border-none bg-transparent focus:ring-red-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Pune" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="History" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="65" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="B" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                         <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1027" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Sneha Verma" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="19/07/2010" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Delhi" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Mathematics" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="95" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="A+" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                         <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1028" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Vikram Rathod" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="02/02/2011" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Pune" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Science" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300 bg-red-50"><input type="text" value="EIGHTY" class="w-full p-1 text-xs border-none bg-transparent focus:ring-red-500"></td>
+                            <td><input type="text" value="B+" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1029" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Nisha Gupta" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="14/09/2010" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Mumbai" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Social Studies" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="88" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="A" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                         <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1030" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Arjun Reddy" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="21/04/2011" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Bangalore" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Mathematics" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="91" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="A+" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                         <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1031" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Kavita Iyer" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="03/12/2010" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Bangalore" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Science" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="82" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="A" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                         <tr>
+                            <td class="border-r border-gray-300"><input type="text" value="1032" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Sanjay Menon" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="18/06/2011" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="Mumbai" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="English" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td class="border-r border-gray-300"><input type="text" value="75" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                            <td><input type="text" value="B+" class="w-full p-1 text-xs border-none focus:ring-indigo-500"></td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-white shadow-inner sticky bottom-0 border-t">
+         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-end items-center py-4 space-x-4">
+                <button class="px-6 py-2 border border-gray-300 text-sm font-medium rounded-md hover:bg-gray-50">Save Draft</button>
+                <a href="confirmation.html" class="px-6 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    Accept & Finalize
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
